@@ -1,0 +1,16 @@
+# Ignore dependency folders (EAS will install these on their server)
+node_modules/
+
+# Ignore native build folders (EAS generates these during Prebuild)
+ios/
+android/
+
+# Ignore local environment files and logs
+.env
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore macOS system files
+.DS_Store
