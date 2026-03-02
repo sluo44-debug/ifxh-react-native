@@ -36,7 +36,7 @@ export function AuthProvider({ children }) {
     setAuthToken(auth?.token ? String(auth.token) : null);
   }, [auth?.token]);
 
-  // Let the API client sign out when refresh fails
+  // Let the API client sign out when refresh fails (V1)
   useEffect(() => {
     setUnauthorizedHandler(() => {
       setAuthToken(null);
